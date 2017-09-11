@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/input_outline"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="cursive"
+                android:textColor="#000000"
+                android:id="@+id/id_name"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="25sp"
+                android:textColor="#212121"
+                android:fontFamily="cursive"
+                android:text="has shared this post"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_blog"
+            android:layout_marginTop="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/blog_title"
+            android:textSize="25sp"
+            android:textColor="#000000"
+            android:hint="Title Goes Here"
+            android:layout_margin="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/blog_desc"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:hint="Description Goes Here"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_like"
+                android:layout_marginLeft="10dp"
+                android:tint="#800000"
+                android:src="@drawable/ic_thumb_up_black_48dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icoiuyt"
+                android:tint="#800000"
+                android:layout_marginLeft="100dp"
+                android:id="@+id/comments"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input_outline"
+            android:id="@+id/edit_comments"/>
+            <android.support.design.widget.FloatingActionButton
+              android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                app:fabSize="mini"
+                android:id="@+id/fab"
+                android:src="@drawable/ic_send_black_48dp"
+                android:layout_alignEnd="@+id/edit_comments"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_comments"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_outline"
+            android:id="@+id/edit_comments_all"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

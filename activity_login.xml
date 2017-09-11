@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#800000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhinav.myblog.LoginActivity">
+
+
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/googleBtn"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp">
+    </com.google.android.gms.common.SignInButton>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <View
+        android:layout_width="150dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        android:background="#fafafa"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fafafa"
+        android:layout_marginTop="10dp"
+        android:text="OR"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        />
+        <View
+            android:layout_width="150dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="20dp"
+            android:background="#fafafa"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/login_email"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Email"
+        android:textAlignment="center"
+        android:textColorHint="#fafafa"
+        android:drawableLeft="@drawable/icons"
+        android:background="@drawable/input_outline"/>
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:id="@+id/login_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:textColorHint="#fafafa"
+        android:drawableLeft="@drawable/icons"
+        android:background="@drawable/input_outline"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LOGIN"
+        android:id="@+id/btn_login"
+        android:textSize="25dp"
+        android:textColor="#fafafa"
+        android:layout_marginTop="20dp"
+        android:background="#800000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fafafa"
+        android:text="NEED AN ACCOUNT? REGISTER"
+        android:textSize="25sp"
+        android:onClick="register"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:fontFamily="cursive"/>
+
+
+</LinearLayout>
+
+
